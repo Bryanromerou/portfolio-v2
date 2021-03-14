@@ -5,10 +5,31 @@ const Project = (props) => {
 
   return (
     <div className="project">
-      <h1>{props.name}</h1>
-      <p>{props.description}</p>
 
-      <div className="project-carousel">
+      <div className="split project-words">
+        <div className = "project-description">
+          <h1>{props.name}</h1>
+          <p>{props.description}</p>
+        </div>
+
+        <div className="project-description-links">
+          <a href={props.github} target="_blank" rel="noopener noreferrer">
+            Visit Github <i class="fab fa-github"></i>
+          </a>
+          <a href={props.live_link} target="_blank" rel="noopener noreferrer">
+            Visit Deployed Site<i class="fas fa-satellite-dish"></i>
+          </a>
+        </div>
+      </div>
+
+      <div className="split project-images">
+        <img
+          src={props.images[0]}
+          className="project-image"
+          />
+      </div>
+
+      {/* <div className="project-carousel">
         {props.images.map((image,index)=>{
           return (
             <img key={index}
@@ -17,8 +38,8 @@ const Project = (props) => {
               alt={`${props.name} ${index}`}
             />)
         })}
-      </div>
-      
+      </div> */}
+
     </div>
   );
 }
