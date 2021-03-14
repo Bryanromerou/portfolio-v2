@@ -1,9 +1,11 @@
 import './App.css';
+import Projects from './components/Projects';
 
 function App() {
   return (
-    <div className="App">
-      App
+    <div className="Main">
+      <nav></nav>
+      <Projects/>
     </div>
   );
 }
