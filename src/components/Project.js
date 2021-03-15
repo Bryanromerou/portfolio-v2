@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Project = (props) => {
-  console.log(props)
   const image = (<div className="split project-images">
                     <img
                       src={props.images[0]}
                       className="project-image"
+                      alt="project"
                       />
                   </div>)
 
@@ -20,10 +20,10 @@ const Project = (props) => {
 
         <div className="project-description-links">
           <a href={props.github} target="_blank" rel="noopener noreferrer">
-            Visit Github <i class="fab fa-github"></i>
+            Visit Github <i className="fab fa-github"></i>
           </a>
           <a href={props.live_link} target="_blank" rel="noopener noreferrer">
-            Visit Deployed Site<i class="fas fa-satellite-dish"></i>
+            Visit Deployed Site<i className="fas fa-satellite-dish"></i>
           </a>
         </div>
       </div>

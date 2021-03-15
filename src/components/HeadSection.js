@@ -1,7 +1,7 @@
 import React from "react";
 
-const HeadSection = () => {
-  return <section id="main">
+const HeadSection = (props) => {
+  return <section id="main" ref={props.reference}>
     <h1>
       Hi! Im Bryan Romero<br/>
       Full Stack Developer<br/>

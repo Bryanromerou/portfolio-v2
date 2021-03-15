@@ -23,11 +23,22 @@ nav{
   height: 60px;
   background-color: var(--color1);
   color: var(--color2);
+  align-items: center;
+  justify-content:space-between;
 }
 .nav-link{
   color: #ffffff;
 }
-
+.personalLogo{
+  width: 40px;
+  height: auto;
+}
+.navbar-logo{
+  margin-left: 100px;
+}
+.navbar-links{
+  margin-right:10px;
+}
 
 /* ------------Project Section-------------- */
 .projects{

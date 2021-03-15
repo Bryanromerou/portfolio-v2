@@ -10,9 +10,9 @@ import image3_1 from '../project_images/project3/1.png';
 import image3_2 from '../project_images/project3/2.png';
 import image3_3 from '../project_images/project3/3.png';
 
-const Projects = () => {
+const Projects = (props) => {
   return (
-    <section className="projects" id="projects">
+    <section ref={props.reference} className="projects" id="projects">
       <Project 
         name="Thought Provoking Questions"
         description = "Thought Provoking Questions is an app that welcome those who have questions that there are no solid answers to. Users are able to add, delete, and edit Questions and reply to other's questions. This full stack application was built with React.js in the front end and a RESTful Api in the backend with MongoDB and Node. It also contains authentication and uses redux to keep the users information in the global state"
