@@ -10,11 +10,11 @@ const Project = (props) => {
                   </div>)
 
   return (
-    <div className="project">
+    <div className={`project${props.inverse? "" : " reg-wrap"}`}>
       {props.inverse && image}
       <div className="split project-words">
         <div className = "project-description">
-          <h1>{props.name}</h1>
+          <h3>{props.name}</h3>
           <p>{props.description}</p>
         </div>
 
