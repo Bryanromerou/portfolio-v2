@@ -2,10 +2,16 @@ import React from 'react';
 
 const Project = (props) => {
   console.log(props)
+  const image = (<div className="split project-images">
+                    <img
+                      src={props.images[0]}
+                      className="project-image"
+                      />
+                  </div>)
 
   return (
     <div className="project">
-
+      {props.inverse && image}
       <div className="split project-words">
         <div className = "project-description">
           <h1>{props.name}</h1>
@@ -21,14 +27,8 @@ const Project = (props) => {
           </a>
         </div>
       </div>
-
-      <div className="split project-images">
-        <img
-          src={props.images[0]}
-          className="project-image"
-          />
-      </div>
-
+      {!props.inverse && image}
+      
       {/* <div className="project-carousel">
         {props.images.map((image,index)=>{
           return (
