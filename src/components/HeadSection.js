@@ -1,7 +1,7 @@
 import React from "react";
 
 const HeadSection = () => {
-  return <section>
+  return <section id="main">
     <h1>
       Hi! Im Bryan Romero<br/>
       Full Stack Developer<br/>

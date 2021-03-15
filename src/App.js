@@ -1,6 +1,7 @@
 import './App.css';
 import EducationSection from './components/EducationSection';
 import ExperienceSection from './components/ExperienceSection';
+import Footer from './components/Footer';
 import HeadSection from './components/HeadSection';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
@@ -15,6 +16,7 @@ function App() {
         <ExperienceSection/>
         <EducationSection/>
       </section>
+      <Footer/>
     </div>
   );
 }
