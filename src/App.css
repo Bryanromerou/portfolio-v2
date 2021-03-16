@@ -6,6 +6,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
 a{
   text-decoration: none;
   color: var(--color1);
@@ -15,9 +18,13 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--color2);
+  background-color: var(--color1);
 }
+
 /* ------------Navbar-------------- */
 nav{
+  position: fixed;
   display: flex;
   width: 100%;
   height: 60px;
@@ -27,17 +34,46 @@ nav{
   justify-content:space-between;
 }
 .nav-link{
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 .personalLogo{
   width: 40px;
   height: auto;
+  color: red;
+  background-color: blue;
 }
 .navbar-logo{
   margin-left: 100px;
 }
 .navbar-links{
   margin-right:10px;
+}
+.light-nav{
+  background-color: transparent;
+  color: var(--color1);
+}
+.dark-nav{
+  background-color: var(--color2);
+  color: var(--color1);
+}
+/* ------------Head Section-------------- */
+#main{
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-title{
+  font-size: 4vw;
+  display: inline;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .8);
+}
+section{
+  padding-top: 60px;
 }
 
 /* ------------Project Section-------------- */
@@ -73,7 +109,6 @@ nav{
   width: 400px;
   height: 400px;
 }
-
 /* education_experience */
 .education_experience{
   display: flex;

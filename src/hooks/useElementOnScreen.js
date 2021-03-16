@@ -13,7 +13,6 @@ const useElementOnScreen = (options) => {
     
     const observer = new IntersectionObserver(callbackFunction, options)
     if (containerRef.current) observer.observe(containerRef.current)
-    // console.log(containerRef.current)
     
     return () => {
       if(containerRef.current) observer.unobserve(containerRef.current)

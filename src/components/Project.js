@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import useElementOnScreen from '../hooks/useElementOnScreen';
 
 const Project = (props) => {
+  const [ containerRef, isVisible ] = useElementOnScreen({
+    root: null,
+    rootMargin: "0px",
+    threshold: 1
+  })
+  useEffect(()=>{isVisible ? console.log(containerRef.current): console.log("")})
   const image = (<div className="split project-images">
                     <img
                       src={props.images[0]}
@@ -10,7 +17,7 @@ const Project = (props) => {
                   </div>)
 
   return (
-    <div className={`project${props.inverse? "" : " reg-wrap"}`}>
+    <div ref={containerRef} className={`project${props.inverse? "" : " reg-wrap"}`}>
       {props.inverse && image}
       <div className="split project-words">
         <div className = "project-description">
