@@ -5,7 +5,7 @@ import general_assembly from '../icons/logos/gaLogo.png';
 
 const ExperienceSection = () => {
   return (
-    <div className="subsection" id="experience">
+    <div className="subsection bottom_border" id="experience">
       <h3>Experience</h3>
       <div className = "experience-listing">
         <img src={general_assembly} alt="General Assembly" className="logo"/>

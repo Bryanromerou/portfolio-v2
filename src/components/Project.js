@@ -1,13 +1,12 @@
-import React, { useEffect } from 'react';
-import useElementOnScreen from '../hooks/useElementOnScreen';
+import React, { useEffect, useState } from 'react';
+import useElementOnScreenOnce from '../hooks/useElementOnScreenOnce';
 
 const Project = (props) => {
-  const [ containerRef, isVisible ] = useElementOnScreen({
+  const [ containerRef, isVisible ] = useElementOnScreenOnce({
     root: null,
-    rootMargin: "0px",
-    threshold: 1
+    rootMargin: "100px",
+    threshold: .5
   })
-  useEffect(()=>{isVisible ? console.log(containerRef.current): console.log("")})
   const image = (<div className="split project-images">
                     <img
                       src={props.images[0]}
@@ -17,7 +16,7 @@ const Project = (props) => {
                   </div>)
 
   return (
-    <div ref={containerRef} className={`project${props.inverse? "" : " reg-wrap"}`}>
+    <div ref={containerRef} className={`project fade-in${props.inverse? "" : " reg-wrap"}${isVisible?" appear":""}`}>
       {props.inverse && image}
       <div className="split project-words">
         <div className = "project-description">
@@ -26,10 +25,10 @@ const Project = (props) => {
         </div>
 
         <div className="project-description-links">
-          <a href={props.github} target="_blank" rel="noopener noreferrer">
+          <a href={props.github} target="_blank" rel="noopener noreferrer" className="project-link">
             Visit Github <i className="fab fa-github"></i>
           </a>
-          <a href={props.live_link} target="_blank" rel="noopener noreferrer">
+          <a href={props.live_link} target="_blank" rel="noopener noreferrer" className="project-link">
             Visit Deployed Site<i className="fas fa-satellite-dish"></i>
           </a>
         </div>
