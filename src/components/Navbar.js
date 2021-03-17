@@ -10,8 +10,8 @@ const Navbar = (props) => {
       </div>
       <div className="navbar-links">
         <Link smooth={true} activeClass="active" spy={true} to="projects" className="nav-link">Projects</Link>
-        <Link smooth={true} activeClass="active" spy={true} to="experience"  offset={-60} className="nav-link">Experience</Link>
-        <Link smooth={true} activeClass="active" spy={true} to="education" offset={-60} className="nav-link">Education</Link>
+        <Link smooth={true} activeClass="active" spy={true} to="experience"  offset={-60} className="nav-link nav_line">Experience</Link>
+        <Link smooth={true} activeClass="active" spy={true} to="education" offset={-60} className="nav-link nav_line">Education</Link>
       </div>
     </nav>
   );

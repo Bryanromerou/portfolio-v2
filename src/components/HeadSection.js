@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Icon from "./Icon";
 import cssIcon from '../icons/css.png';
+import djangoIcon from '../icons/django.png';
+// import cssIcon from '../icons/css.png';
+// import cssIcon from '../icons/css.png';
+// import cssIcon from '../icons/css.png';
+// import cssIcon from '../icons/css.png';
 
 const HeadSection = (props) => {
   const [yOffset, setYOffset] = useState(0);
@@ -15,7 +20,8 @@ const HeadSection = (props) => {
 
   return <section id="main" ref={props.reference}>
     <div className="parallax_icons">
-      <Icon source ={cssIcon} name="CSS" offset={yOffset}/>
+      <Icon source = {cssIcon} name="CSS" offset={yOffset}/>
+      <Icon source = {djangoIcon} name="Django" offset={yOffset}/>
     </div>
     <h1 className="main-title">
       Hi, Im Bryan Romero!<br/>

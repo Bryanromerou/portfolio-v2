@@ -1,6 +1,6 @@
 :root {
-  --color2: #000000;
-  --color1: #ffffff;
+  --color1: #000000;
+  --color2: #ffffff;
 }
 
 /* CSS RESETS */
@@ -10,6 +10,9 @@
 }
 body{
   overflow-x: hidden;
+  animation: fadeInAnimation ease 2s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;
 }
 a{
   text-decoration: none;
@@ -47,15 +50,14 @@ nav{
 }
 
 .personalLogo{
+  width: 60px;
   height: auto;
-  color: red;
-  background-color: blue;
 }
 .navbar-logo{
-  margin-left: 1vw;
+  margin-left: 4vw;
 }
 .navbar-links{
-  margin-right:10px;
+  margin-right:4vw;
 }
 .light-nav{
   background-color: transparent;
@@ -64,6 +66,9 @@ nav{
 .dark-nav{
   background-color: var(--color2);
   color: var(--color1);
+}
+.nav_line{
+  border-left: 1px solid var(--color1);
 }
 
 /* ------------Head Section-------------- */
@@ -80,7 +85,8 @@ nav{
   display: inline;
   text-align: center;
   padding: 10px;
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(0, 0, 0, .8);
+  
 }
 .parallax_logo{
   top: 50vh;
@@ -102,6 +108,7 @@ section{
 }
 .project{
   display: flex;
+  margin: 100px 0px;
 }
 .projects-title{
   font-size: 4rem;
@@ -160,8 +167,9 @@ section{
 }
 
 .subsection{
+  margin: 20px;
   width: 44vw;
-  padding: 10px;
+  padding: 0px 20px;
 }
 .left_border{
   border-left: 1px solid var(--color2);
@@ -191,6 +199,7 @@ section{
     border: none;
   }
   .bottom_border{
+    padding-bottom: 20px;
     border-bottom: 1px solid var(--color2);
   }
 }
@@ -206,4 +215,14 @@ footer{
 .contact-me{
   text-align: center;
   padding-bottom: 10vh;
+}
+
+/* Animations */
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
 }

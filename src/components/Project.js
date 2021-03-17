@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import useElementOnScreenOnce from '../hooks/useElementOnScreenOnce';
 
 const Project = (props) => {
   const [ containerRef, isVisible ] = useElementOnScreenOnce({
     root: null,
     rootMargin: "100px",
-    threshold: .5
+    threshold: .7
   })
   const image = (<div className="split project-images">
                     <img
