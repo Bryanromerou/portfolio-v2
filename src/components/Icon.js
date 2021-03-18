@@ -4,9 +4,9 @@ const Icon = (props) => {
   const [styles, setStyles] = useState({});
   useEffect(()=>{
     setStyles({
-      width:"100px",
-      height:"100px",
-      transform:`translateY(${props.offset*.3}px) `,
+      top:`${props.top}vh`,
+      left:`${props.left}vw`,
+      transform:`translateY(${props.offset*.3}px)`,
     })
   },[])
   return (
