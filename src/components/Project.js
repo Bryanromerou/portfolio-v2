@@ -20,8 +20,8 @@ const Project = (props) => {
       {props.inverse && image}
       <div className="split project-words">
         <div className = "project-description">
-          <h3>{props.name}</h3>
-          <p>{props.description}</p>
+          <p className="project-name">{props.name}</p>
+          <p className="project-bio">{props.description}</p>
         </div>
 
         <div className="project-description-links">

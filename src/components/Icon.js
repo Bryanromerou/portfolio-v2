@@ -11,7 +11,7 @@ const Icon = (props) => {
   },[])
   return (
     <>
-      <img style={styles} src={props.source} alt={props.name} className="parallax_logo"/>
+      <img style={styles} src={props.source} alt={props.name} className="parallax_logo fade-in-slower"/>
     </>
   );
 }

@@ -16,16 +16,20 @@ function App() {
   })
   useEffect(()=>{console.log(isVisible)})
   return (
-    <div className="main">
+    <>
       <Navbar dark={!isVisible}/>
-      <HeadSection reference={containerRef}/>
-      <Projects/>
-      <section className="education_experience">
-        <ExperienceSection/>
-        <EducationSection/>
-      </section>
+
+      <div className="main">
+        <HeadSection reference={containerRef}/>
+        <Projects/>
+        <section className="education_experience">
+          <ExperienceSection/>
+          <EducationSection/>
+        </section>
+      </div>
+      
       <Footer/>
-    </div>
+    </>
   );
 }
 

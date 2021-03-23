@@ -1,6 +1,7 @@
 :root {
-  --color1: #000000;
-  --color2: #ffffff;
+  --color2: #000000;
+  --color1: #ffffff;
+  --accentColor: #357266;
 }
 
 /* CSS RESETS */
@@ -8,15 +9,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body{
   overflow-x: hidden;
-  animation: fadeInAnimation ease 2s; 
-  animation-iteration-count: 1; 
-  animation-fill-mode: forwards;
 }
+
 a{
   text-decoration: none;
-  color: var(--color1);
 }
 ul{
   list-style-type: none;
@@ -29,6 +28,11 @@ ul{
   align-items: center;
   color: var(--color2);
   background-color: var(--color1);
+}
+.animate{
+  animation: fadeInAnimation ease 2s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;  
 }
 
 /* ------------Navbar-------------- */
@@ -44,15 +48,26 @@ nav{
   z-index: 99;
   transition: all 500ms;
 }
-
 .nav-link{
   padding: 15px;
+}
+.nav-link:hover{
+  color: var(--accentColor);
 }
 
 .personalLogo{
   width: 60px;
   height: auto;
+  fill: black;
+  stroke: black;
 }
+.dark-logo{
+  animation: fill 1s ease forwards;
+}
+.light-logo{
+  animation: reverse-fill 2s ease forwards;
+}
+
 .navbar-logo{
   margin-left: 4vw;
 }
@@ -61,21 +76,21 @@ nav{
 }
 .light-nav{
   background-color: transparent;
-  color: var(--color1);
+  color: var(--color2);
 }
 .dark-nav{
   background-color: var(--color2);
   color: var(--color1);
 }
 .nav_line{
-  border-left: 1px solid var(--color1);
+  border-left: 1px solid var(--accentColor);
 }
 
 /* ------------Head Section-------------- */
 #main{
   height: 100vh;
   width: 100vw;
-  background-color: var(--color2);
+  background-color: var(--color1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,12 +100,11 @@ nav{
   display: inline;
   text-align: center;
   padding: 10px;
-  background-color: rgba(0, 0, 0, .8);
+  color: var(--color1);
+  background-color: var(--color2);
   z-index: 999;
 }
 .parallax_logo{
-  /* top: 50vh;
-  left: 10vw; */
   width:100px;
   height:auto;
   position: absolute;
@@ -98,17 +112,18 @@ nav{
 }
 section{
   padding-top: 60px;
+  max-width: 1500px;
 }
 
 /* ------------Project Section-------------- */
 .projects{
   display: flex;
   flex-direction: column;
-  margin: 0 100px;
+  /* margin: 0 100px; */
 }
 .project{
   display: flex;
-  margin: 100px 0px;
+  margin: 50px 0px;
 }
 .projects-title{
   font-size: 4rem;
@@ -132,6 +147,12 @@ section{
 .fade-in.appear{
   opacity: 1;
 }
+.project-name{
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: var(--accentColor);
+}
 .project-words{
   max-width: 50%;
   align-items: stretch;
@@ -145,7 +166,7 @@ section{
   border-radius: 10px;
 }
 .project-link{
-  color: var(--color2);
+  color: var(--accentColor);
 }
 @media (max-width:1020px){
   .project{
@@ -157,7 +178,9 @@ section{
     flex-direction: column-reverse;
   }
   .project-words{
-    width: 100vw;
+    margin-top: 20px;
+    width: 80vw;
+    max-width: 100%;
   }
 }
 /* ----------------education_experience---------------- */
@@ -226,3 +249,16 @@ footer{
       opacity: 1; 
   } 
 }
+@keyframes fill{
+  to{
+    fill: #ffffff;
+    stroke: #ffffff;
+  }
+}
+@keyframes reverse-fill{
+  to{
+    fill: black;
+    stroke: black;
+  }
+}
+
