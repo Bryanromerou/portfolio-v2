@@ -21,13 +21,15 @@ const Projects = (props) => {
         live_link = "https://github.com/Bryanromerou/thought-provoking-questions"
         images = {[image1_1,image1_2,image1_3]}
         inverse = {true}
-      />
+        stack = {["Node.js","React","Express","JavaScript","MongoDB","Heroku","Bcrypt","Authentication","JWT","HTML","CSS","Youtube API"]}
+        />
       <Project 
         name="DRYFT"
         description = "DRYFT is a travel blogging and social site dedicated to those who are always on the move. To signup, users must enter their relevant profile info, as well as select the city in the world they happen to be in at the moment. Optionally, they can also include a profile picture of themselves. Within the app, the user will be able to find and post about any city in the world as well as comment on the posts other users have made."
         github = "https://github.com/jedgodsey/dryft"
         live_link = "https://dryft.herokuapp.com/"
         images = {[image2_1,image2_2,image2_3]}
+        stack = {["Python","Django","PostgreSQL","JavaScript","Heroku","Authentication","CSS","HTML","Google Maps API"]}
         />
       <Project 
         name="Anatomy-is-Awesome"
@@ -36,6 +38,7 @@ const Projects = (props) => {
         live_link = "https://floating-escarpment-82475.herokuapp.com/"
         images = {[image3_1,image3_2,image3_3]}
         inverse = {true}
+        stack = {["Node.js","Express","JavaScript","MongoDB","Heroku","HTML","CSS"]}
       />
     </section>
   );

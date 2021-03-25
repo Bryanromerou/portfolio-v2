@@ -50,9 +50,11 @@ nav{
 }
 .nav-link{
   padding: 15px;
+  transition: background .5s;
 }
 .nav-link:hover{
-  color: var(--accentColor);
+  background-color: var(--accentColor);
+  border-radius: 5px;
 }
 
 .personalLogo{
@@ -83,7 +85,7 @@ nav{
   color: var(--color1);
 }
 .nav_line{
-  border-left: 1px solid var(--accentColor);
+  border-left: 1px solid var(--color1);
 }
 
 /* ------------Head Section-------------- */
