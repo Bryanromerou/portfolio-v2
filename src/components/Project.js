@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import useElementOnScreenOnce from '../hooks/useElementOnScreenOnce';
 
 const Project = (props) => {
@@ -14,10 +14,6 @@ const Project = (props) => {
                       alt="project"
                       />
                   </div>)
-  useEffect(()=>{
-    console.log(props.stack)
-    props.stack.map((el)=>{})
-  },[])
 
   return (
     <div ref={containerRef} className={`project fade-in${props.inverse? "" : " reg-wrap"}${isVisible?" appear":""}`}>

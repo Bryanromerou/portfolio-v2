@@ -16,8 +16,8 @@ const HeadSection = (props) => {
 
   return <section id="main" ref={props.reference}>
     <h1 className="main-title animate">
-      Hi, Im Bryan Romero!<br/>
-      I am Full Stack Developer<br/>
+      Hi, I'm Bryan Romero!<br/>
+      I am a Full Stack Developer<br/>
     </h1>
   </section>;
 };

@@ -50,7 +50,7 @@ nav{
 }
 .nav-link{
   padding: 15px;
-  transition: background .5s;
+  transition: background .2s;
 }
 .nav-link:hover{
   background-color: var(--accentColor);
@@ -105,6 +105,7 @@ nav{
   color: var(--color1);
   background-color: var(--color2);
   z-index: 999;
+  padding: 6%;
 }
 .parallax_logo{
   width:100px;
@@ -130,6 +131,19 @@ section{
 .projects-title{
   font-size: 4rem;
   text-align: center;
+}
+.project-techstack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-techstack:last-child{
+  background-color: #357266;
+}
+.project-tech {
+  margin: 8px;
+  font-weight: 300;
+  color: var(--accentColor);
 }
 .reg-wrap{
   flex-wrap: wrap-reverse;
@@ -163,14 +177,16 @@ section{
   margin: 20px;
 }
 .project-image{
-  width: 400px;
-  height: 400px;
+  width: 25vw;
+  height: 25vw;
+  min-height: 300px;
+  min-width: 300px;
   border-radius: 10px;
 }
 .project-link{
   color: var(--accentColor);
 }
-@media (max-width:1020px){
+@media (max-width:1070px){
   .project{
     flex-direction: column;
     align-items: center;
@@ -197,7 +213,7 @@ section{
   padding: 0px 20px;
 }
 .left_border{
-  border-left: 1px solid var(--color2);
+  border-left: 1px solid var(--accentColor);
 }
 .logo{
   margin: 10px;
@@ -225,21 +241,42 @@ section{
   }
   .bottom_border{
     padding-bottom: 20px;
-    border-bottom: 1px solid var(--color2);
+    border-bottom: 1px solid var(--accentColor);
   }
 }
 
 /* ----------------Footer---------------- */
 footer{
-  height: 30vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .contact-me{
   text-align: center;
   padding-bottom: 10vh;
+  font-size: 40px;
+}
+.contact-me p{
+  margin-top: 30px;
+  color: var(--accentColor);
+}
+.contact-me a{
+  color: var(--accentColor);
+  font-size: 30px;
+}
+
+.contact-links{
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 20px solid;
+  border-bottom: 20px solid;
+  justify-content: space-evenly;
 }
 
 /* Animations */
