@@ -1,6 +1,6 @@
 :root {
-  --color2: #000000;
   --color1: #ffffff;
+  --color2: #000000;
   --accentColor: #357266;
 }
 
@@ -129,7 +129,7 @@ section{
   margin: 50px 0px;
 }
 .projects-title{
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
 }
 .project-techstack {
@@ -164,7 +164,7 @@ section{
   opacity: 1;
 }
 .project-name{
-  font-size: larger;
+  font-size: 2rem;
   font-weight: bold;
   text-decoration: underline;
   text-decoration-color: var(--accentColor);
@@ -224,7 +224,6 @@ section{
 }
 
 .logo:hover { 
-  transform: scale(1.1);
   filter: grayscale(0%);
   z-index: 998;
 }

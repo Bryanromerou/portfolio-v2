@@ -1,0 +1,46 @@
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fill {
+  to {
+    fill: #ffffff;
+    stroke: #ffffff;
+  }
+}
+@keyframes reverse-fill {
+  to {
+    fill: black;
+    stroke: black;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes swipe {
+  0% {
+    right: 100%;
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    right: 0;
+    left: 100%;
+    width: 0%;
+  }
+}

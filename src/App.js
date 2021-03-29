@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import './App.css';
+// import './App.css';
+import './styles/styles.scss';
 import EducationSection from './components/EducationSection';
 import ExperienceSection from './components/ExperienceSection';
 import Footer from './components/Footer';

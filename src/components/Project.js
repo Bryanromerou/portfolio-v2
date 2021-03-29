@@ -34,7 +34,7 @@ const Project = (props) => {
             Visit Github <i className="fab fa-github"></i>
           </a>
           <a href={props.live_link} target="_blank" rel="noopener noreferrer" className="project-link">
-            Visit Deployed Site<i className="fas fa-satellite-dish"></i>
+            Visit Deployed Site <i className="fas fa-satellite-dish"></i>
           </a>
         </div>
       </div>

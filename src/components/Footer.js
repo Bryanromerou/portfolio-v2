@@ -9,7 +9,7 @@ const Footer = () => {
         <a href="https://github.com/bryanromerou">Github <i className="fab fa-github-square"/></a>
         <a href="mailto: Bryanromerou@gmail.com">Email <i className="fas fa-envelope-open-text"/></a>
       </div>
-      <p>Lets Work Together</p>
+      <p>Lets Work Together!</p>
     </footer>
   );
 }

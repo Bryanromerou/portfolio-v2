@@ -1,0 +1,52 @@
+nav {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: $main-color-dark;
+  // color: blue;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  transition: all 500ms;
+}
+.nav-link {
+  padding: 15px;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+.nav-link:hover {
+  background-color: $accent-color;
+  border-radius: 5px;
+}
+
+.personalLogo {
+  width: 60px;
+  height: auto;
+  fill: black;
+  stroke: black;
+}
+.dark-logo {
+  animation: fill 1s ease forwards;
+}
+.light-logo {
+  animation: reverse-fill 2s ease forwards;
+}
+
+.navbar-logo {
+  margin-left: 4vw;
+}
+.navbar-links {
+  margin-right: 4vw;
+}
+.light-nav {
+  background-color: transparent;
+  color: $main-color-dark;
+}
+.dark-nav {
+  background-color: $main-color-dark;
+  color: $main-color-light;
+}
+.nav_line {
+  border-left: 1px solid $main-color-light;
+}

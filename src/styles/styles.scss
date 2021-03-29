@@ -1,0 +1,42 @@
+$main-color-dark: #000000;
+$main-color-light: #ffffff;
+$main-gray:#414141;
+$accent-color: #357266;
+$paragraph-font: 20px;
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color2);
+  background-color: var(--color1);
+}
+.animate {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@import "./components_styles/_NavbarStyles";
+@import "./components_styles/_ProjectStyles";
+@import "./components_styles/_FooterStyles";
+@import "./page_styles/_HeadStyles";
+@import "./page_styles/_ProjectsStyles";
+@import "./page_styles/_EducationExperienceStyles";
+@import "./_AnimationStyles";

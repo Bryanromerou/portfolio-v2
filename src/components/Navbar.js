@@ -7,7 +7,7 @@ const Navbar = ({dark}) => {
   return (
     <nav className={`animate${dark?" dark-nav":" light-nav"}`}>
       <div className="navbar-logo">
-        <Link smooth={true} to="main" className="nav-link"><PersonalLogo dark={dark}/></Link>
+        <Link smooth={true} to="main"><PersonalLogo dark={dark}/></Link>
         {/* <Link smooth={true} to="main" className="nav-link"><img src={logo} alt="BryanRomero" className="personalLogo"/></Link> */}
       </div>
       <div className="navbar-links">
