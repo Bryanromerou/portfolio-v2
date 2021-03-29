@@ -9,6 +9,9 @@ const Project = (props) => {
     threshold: .7
   })
   const image = (<Carousel images ={props.images} />)
+  const project_description = props.description.map((descrip,index)=>{
+    return (<p className="project-bio" key={index}>{descrip}</p>)
+  })
 
   return (
     <div ref={containerRef} className={`project fade-in${props.inverse? "" : " reg-wrap"}${isVisible?" appear":""}`}>
@@ -18,17 +21,17 @@ const Project = (props) => {
           <p className="project-name">{props.name}</p>
           <div className="project-techstack">
             {props.stack.map((tech)=>{
-              return(<p className="project-tech">{tech}</p>)
+              return(<p>{tech}</p>)
             })}
           </div>
-          <p className="project-bio">{props.description}</p>
+          {project_description}
         </div>
 
         <div className="project-description-links">
-          <a href={props.github} target="_blank" rel="noopener noreferrer" className="project-link">
-            Visit Github <i className="fab fa-github"></i>
+          <a href={props.github} target="_blank" rel="noopener noreferrer">
+            Visit Repo <i className="fab fa-github"></i>
           </a>
-          <a href={props.live_link} target="_blank" rel="noopener noreferrer" className="project-link">
+          <a href={props.live_link} target="_blank" rel="noopener noreferrer">
             Visit Deployed Site <i className="fas fa-satellite-dish"></i>
           </a>
         </div>

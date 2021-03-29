@@ -6,12 +6,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-.project-tech {
-  margin: 6px;
-  font-weight: 300;
-  color: $accent-color;
-  font-size: 18px;
+  
+  p{
+    margin: 6px;
+    font-weight: 300;
+    color: $accent-color;
+    font-size: 18px;
+  }
 }
 .reg-wrap{
   flex-wrap: wrap-reverse;
@@ -44,11 +45,20 @@
   font-size: 18px;
   padding: 16px;
 }
+.project-bio{
+  margin-bottom: 10px;
+}
 .project-description-links{
   font-size: 20px;
   justify-content: space-evenly;
   display: flex;
   margin: 20px;
+  a{
+    color: $main-color-dark;
+  }
+  i{
+    color: $accent-color;
+  }
 }
 .project-image{
   width: 25vw;
@@ -56,9 +66,6 @@
   min-height: 300px;
   min-width: 300px;
   border-radius: 10px;
-}
-.project-link{
-  color: $accent-color;
 }
 .swiper-button-prev,.swiper-button-next{
   color: $accent-color !important;
