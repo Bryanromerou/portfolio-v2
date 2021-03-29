@@ -1,5 +1,6 @@
 import React from 'react';
 import useElementOnScreenOnce from '../hooks/useElementOnScreenOnce';
+import Carousel from './Carousel';
 
 const Project = (props) => {
   const [ containerRef, isVisible ] = useElementOnScreenOnce({
@@ -7,13 +8,7 @@ const Project = (props) => {
     rootMargin: "100px",
     threshold: .7
   })
-  const image = (<div className="split project-images">
-                    <img
-                      src={props.images[0]}
-                      className="project-image"
-                      alt="project"
-                      />
-                  </div>)
+  const image = (<Carousel images ={props.images} />)
 
   return (
     <div ref={containerRef} className={`project fade-in${props.inverse? "" : " reg-wrap"}${isVisible?" appear":""}`}>
@@ -39,17 +34,7 @@ const Project = (props) => {
         </div>
       </div>
       {!props.inverse && image}
-      
-      {/* <div className="project-carousel">
-        {props.images.map((image,index)=>{
-          return (
-            <img key={index}
-              src={image}
-              className="project-image"
-              alt={`${props.name} ${index}`}
-            />)
-        })}
-      </div> */}
+    
 
     </div>
   );

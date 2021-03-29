@@ -9,10 +9,6 @@ const HeadSection = (props) => {
     <div className="swipe swipe--delay">
       <h3>Full Stack Developer</h3>
     </div>
-    {/* <h1 className="main-title animate">
-      Hi, I'm Bryan Romero!
-      I am a Full Stack Developer
-    </h1> */}
   </section>;
 };
 

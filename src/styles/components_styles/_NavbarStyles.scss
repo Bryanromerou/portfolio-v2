@@ -3,8 +3,8 @@ nav {
   display: flex;
   width: 100%;
   height: 60px;
-  background-color: $main-color-dark;
-  // color: blue;
+  background-color: $main-color-light;
+  color: $main-color-dark;
   align-items: center;
   justify-content: space-between;
   z-index: 99;
@@ -40,7 +40,7 @@ nav {
   margin-right: 4vw;
 }
 .light-nav {
-  background-color: transparent;
+  background-color: $main-color-light;
   color: $main-color-dark;
 }
 .dark-nav {

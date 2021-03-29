@@ -9,6 +9,8 @@ import image2_3 from '../project_images/project2/3.png';
 import image3_1 from '../project_images/project3/1.png';
 import image3_2 from '../project_images/project3/2.png';
 import image3_3 from '../project_images/project3/3.png';
+import Carousel from './Carousel';
+
 
 const Projects = (props) => {
   return (

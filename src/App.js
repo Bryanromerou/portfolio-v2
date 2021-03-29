@@ -28,7 +28,6 @@ function App() {
           <EducationSection/>
         </section>
       </div>
-      
       <Footer/>
     </>
   );

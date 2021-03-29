@@ -1,6 +1,6 @@
 .project{
   display: flex;
-  margin: 100px 0px;
+  margin: 0px 0px 15vh 0px;
 }
 .project-techstack {
   display: flex;
@@ -35,13 +35,14 @@
   font-size: 30px;
   font-weight: bold;
   text-decoration: underline;
-  text-decoration-color: $accent-color;
+  text-decoration-color: $main-gray;
   margin-bottom: 16px;
 }
 .project-words{
   max-width: 50%;
   align-items: stretch;
   font-size: 18px;
+  padding: 16px;
 }
 .project-description-links{
   font-size: 20px;
@@ -59,6 +60,13 @@
 .project-link{
   color: $accent-color;
 }
+.swiper-button-prev,.swiper-button-next{
+  color: $accent-color !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: $accent-color !important;
+}
+
 @media (max-width:1070px){
   .project{
     flex-direction: column;
