@@ -9,7 +9,6 @@ import image2_3 from '../project_images/project2/3.png';
 import image3_1 from '../project_images/project3/1.png';
 import image3_2 from '../project_images/project3/2.png';
 import image3_3 from '../project_images/project3/3.png';
-import Carousel from './Carousel';
 
 
 const Projects = (props) => {
@@ -18,20 +17,20 @@ const Projects = (props) => {
       <h2 className="projects-title">My Projects</h2>
       <Project 
         name="Thought Provoking Questions"
-        description = {["Thought Provoking Questions is an app that welcome those who have questions that there are no solid answers to. Users are able to add, delete, and edit Questions and reply to other's questions.","This full stack application was built with React.js in the front end and a RESTful Api in the backend with MongoDB and Node. It also contains authentication and uses redux to keep the users information in the global state"]}
-        github = "https://sleepy-mesa-13114.herokuapp.com/"
-        live_link = "https://github.com/Bryanromerou/thought-provoking-questions"
+        description = {["Thought Provoking Questions is an full stack application that welcome those who have questions that there are no solid answers to. Users are able to add, delete, and edit Questions along the ability to engage with other Users by replying to their questions.","This application was built using the React.js in the front-end and Node.js, MongoDB, and Express.js in the back-end. Authentication was implemented using Bcrypt and passed through the front-end via JWT(Json Web Token). Then the user was tracked throughout the site by storing the user information in a global state using React Redux. Additionally I incorporated the Youtube API to show the user videos relevant to their questions. "]}
+        github = "https://github.com/Bryanromerou/thought-provoking-questions"
+        live_link = "https://sleepy-mesa-13114.herokuapp.com/"
         images = {[image1_1,image1_2,image1_3]}
         inverse = {true}
         stack = {["Node.js","React","Express","JavaScript","MongoDB","Heroku","Bcrypt","Authentication","JWT","HTML","CSS","Youtube API"]}
         />
       <Project 
         name="DRYFT"
-        description = {["DRYFT is a travel blogging and social site dedicated to those who are always on the move. To signup, users must enter their relevant profile info, as well as select the city in the world they happen to be in at the moment. Optionally, they can also include a profile picture of themselves. Within the app, the user will be able to find and post about any city in the world as well as comment on the posts other users have made."]}
+        description = {["DRYFT is a travel blogging and social media site dedicated to those who are always on the move. Where one could share pictures of places that they have visited and engage with others.","DRYFT was a project done in collaboration with 3 other General Assembly graduates. This application was built using python’s framework, Django, and PostgreSQL for the database. I played an important role in creating full CRUD functionality with the user’s information and in implementing the Google Map’s API."]}
         github = "https://github.com/jedgodsey/dryft"
-        live_link = "https://dryft.herokuapp.com/"
+        // live_link = "https://dryft.herokuapp.com/"
         images = {[image2_1,image2_2,image2_3]}
-        stack = {["Python","Django","PostgreSQL","JavaScript","Heroku","Authentication","CSS","HTML","Google Maps API"]}
+        stack = {["Python","Django","PostgreSQL","JavaScript","Authentication","CSS","HTML","Google Maps API"]}
         />
       <Project 
         name="Anatomy-is-Awesome"
@@ -40,7 +39,7 @@ const Projects = (props) => {
         live_link = "https://floating-escarpment-82475.herokuapp.com/"
         images = {[image3_1,image3_2,image3_3]}
         inverse = {true}
-        stack = {["Node.js","Express","JavaScript","MongoDB","Heroku","HTML","CSS"]}
+        stack = {["Node.js","Express","JavaScript","MongoDB","Heroku","HTML","CSS","TinyMCE API"]}
       />
     </section>
   );

@@ -31,9 +31,12 @@ const Project = (props) => {
           <a href={props.github} target="_blank" rel="noopener noreferrer">
             Visit Repo <i className="fab fa-github"></i>
           </a>
-          <a href={props.live_link} target="_blank" rel="noopener noreferrer">
-            Visit Deployed Site <i className="fas fa-satellite-dish"></i>
-          </a>
+          {
+            Boolean(props.live_link) &&
+            <a href={props.live_link} target="_blank" rel="noopener noreferrer">
+              Visit Deployed Site <i className="fas fa-satellite-dish"></i>
+            </a>
+          }
         </div>
       </div>
       {!props.inverse && image}

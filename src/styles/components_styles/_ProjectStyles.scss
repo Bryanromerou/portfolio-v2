@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+
   p{
     margin: 6px;
     font-weight: 300;
@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   flex-grow: 1;
 }
 .fade-in{
@@ -33,6 +33,7 @@
   opacity: 1;
 }
 .project-name{
+  text-align: center;
   font-size: 30px;
   font-weight: bold;
   text-decoration: underline;

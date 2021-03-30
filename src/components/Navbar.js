@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../icons/personalLogo.svg';
 import { Link } from "react-scroll";
 import PersonalLogo from './PersonalLogo';
 
@@ -8,7 +7,6 @@ const Navbar = ({dark}) => {
     <nav className={`animate${dark?" dark-nav":" light-nav"}`}>
       <div className="navbar-logo">
         <Link smooth={true} to="main"><PersonalLogo dark={dark}/></Link>
-        {/* <Link smooth={true} to="main" className="nav-link"><img src={logo} alt="BryanRomero" className="personalLogo"/></Link> */}
       </div>
       <div className="navbar-links">
         <Link smooth={true} activeClass="active" spy={true} to="projects" className="nav-link">Projects</Link>
